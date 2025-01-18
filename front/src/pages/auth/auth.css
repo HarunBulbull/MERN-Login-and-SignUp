@@ -1,0 +1,35 @@
+.auth_background{
+    background: url(/bakery.webp);
+    height: 100dvh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth_background .mainArea{
+    position: fixed;
+    width: 30vw;
+    height: 100dvh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+}
+
+.auth_background .mainArea .animateIn{
+    transform: translateY(0);
+    transition: ease .4s
+}
+
+@media (max-width: 650px){
+    .auth_background .mainArea{
+        width: 100%;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255,255,255,.7);
+    }
+}

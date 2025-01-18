@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Archivo';
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+:root{
+  --color: rgba(111, 44, 245, 1);
+  --color-9: rgba(111, 44, 245, .9);
+  --color-8: rgba(111, 44, 245, .8);
+  --color-7: rgba(111, 44, 245, .7);
+  --color-6: rgba(111, 44, 245, .6);
+  --color-5: rgba(111, 44, 245, .5);
+  --color-4: rgba(111, 44, 245, .4);
+  --color-3: rgba(111, 44, 245, .3);
+  --color-2: rgba(111, 44, 245, .2);
+  --color-1: rgba(111, 44, 245, .1);
+}
+
+
+h1{font-size: clamp(1.75rem, 1.0536rem + 2.4762vw, 3.375rem);}
+h2{font-size: clamp(1.5625rem, 0.9464rem + 2.1905vw, 3rem);}
+h3{font-size: clamp(1.375rem, 0.8929rem + 1.7143vw, 2.5rem);}
+h4{font-size: clamp(1.1875rem, 0.7857rem + 1.4286vw, 2.125rem);}
+h5{font-size: clamp(1rem, 0.7321rem + 0.9524vw, 1.625rem);}
+p, i, b, input, label, button{font-size: clamp(0.8125rem, 0.6786rem + 0.4762vw, 1.125rem);}
+
+/* Mostly Used */
+
+.flex {display: flex;}
+.col {flex-direction: column;}
+.jcc {justify-content: center;}
+.jcs {justify-content: start;}
+.jce {justify-content: end;}
+.aic {align-items: center;}
+.ais {align-items: start;}
+.aie {align-items: end;}
+.g-3 {gap: .3rem}
+.g-5 {gap: .5rem}
+.g1 {gap: 1rem}
+.g1-5 {gap: 1.5rem}
+
+/* Reusable */
+.mainButton{
+  background-color: #000;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+  transition: ease .3s;
+  font-weight: bold;
+}
+
+.mainButton:hover{
+  background-color: var(--color)
+}
+
+/* Hover to convert 'TEXT' color into main color */
+.re_hoverToMainColor{
+  transition: ease .3s;
+  cursor: pointer;
+  user-select: none;
+}
+.re_hoverToMainColor:hover{color: var(--color);}

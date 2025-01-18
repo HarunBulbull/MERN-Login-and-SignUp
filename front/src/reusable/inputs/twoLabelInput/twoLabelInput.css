@@ -1,0 +1,53 @@
+.twoLabelInput_main{
+    border-bottom: 2px solid #000;
+    position: relative;
+    width: 250px;
+    padding-bottom: .3rem;
+}
+
+.twoLabelInput_main .twoLabelInput_input{
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.twoLabelInput_main .twoLabelInput_firstLabel{
+    position: absolute;
+    left: 0;
+    transition: ease .3s;
+    user-select: none;
+    cursor: text;
+    z-index: 0;
+}
+.twoLabelInput_main .twoLabelInput_secondLabel{
+    position: absolute;
+    left: -2rem;
+    top: -1rem;
+    font-size: 12px;
+    transition: ease .3s;
+    opacity: 0;
+    user-select: none;
+
+}
+
+.twoLabelInput_main .twoLabelInput_input:focus + .twoLabelInput_firstLabel,
+.twoLabelInput_main .twoLabelInput_input:not(:placeholder-shown) + .twoLabelInput_firstLabel{
+    left: 2rem;
+    opacity: 0;
+}
+
+.twoLabelInput_main .twoLabelInput_input:focus + .twoLabelInput_firstLabel + .twoLabelInput_secondLabel,
+.twoLabelInput_main .twoLabelInput_input:not(:placeholder-shown) + .twoLabelInput_firstLabel + .twoLabelInput_secondLabel{
+    left: 0;
+    opacity: 1;
+}
+
+@media (max-width: 650px){
+    .twoLabelInput_main .twoLabelInput_secondLabel{
+        font-size: 9px;
+        top: -.8rem
+    }
+}
