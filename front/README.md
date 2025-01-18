@@ -1,8 +1,21 @@
-# React + Vite
+# MERN Log In and Sign Up
+This content was created by harunbulbull and licensed on his behalf.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+- Error handling on every step
+- Almost completely ready to use. (Only api-key and mongo url settings should be made.)
+- Easy to edit
 
-Currently, two official plugins are available:
+### Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##### Frontend
+`cd front`
+`npm i`
+`npm run dev`
+Don't forget to edit the .env file!
+
+##### Backend
+`cd back`
+`npm i`
+`npm start`
+Don't forget to edit the .env file!
