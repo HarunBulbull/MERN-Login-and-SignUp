@@ -44,7 +44,7 @@ router.post("/login", async (req, res) => {
 
         // Check stored password is valid
         const isPasswordValid = await bcrypt.compare(password, existingUser.userPassword);
-        if (!isPasswordValid) {return res.status(401).json("Yanlış şifre!");}
+        if (!isPasswordValid) {return res.status(401).json({error: "Yanlış şifre!"});}
 
         // Send Data
         const userData = existingUser.toObject();
